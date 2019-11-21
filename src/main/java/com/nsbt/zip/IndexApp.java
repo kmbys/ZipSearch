@@ -9,6 +9,6 @@ public class IndexApp {
 
 	@GetMapping
 	public ModelAndView get() {
-		return new ModelAndView("index", "prefecture", "北海道");
+		return new ModelAndView("index", "response", new IndexResponse());
 	}
 }

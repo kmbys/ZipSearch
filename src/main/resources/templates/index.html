@@ -11,8 +11,8 @@
 			<input type="submit" value="検索"/>
 		</form>
 	</div>
-	<div class="prefectures">
-		<a href="hokkaido" th:text="${prefecture}">都道府県1</a>
+	<div class="prefectures" th:each="prefecture : ${response.prefectures}">
+		<a th:href="@{${prefecture.key}}" th:text="${prefecture.value}">都道府県1</a>
 	</div>
 </body>
 </html>
