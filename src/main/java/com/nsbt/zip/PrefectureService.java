@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 public class PrefectureService {
 	public List<Prefecture> findAll () {
 		return Arrays.asList(
-				new Prefecture (1, "hokkaido", "北海道"),
-				new Prefecture(2, "tokyoto", "東京都"),
-				new Prefecture(3, "okinawaken", "沖縄県"));
+				new Prefecture (1, "北海道"),
+				new Prefecture(2, "東京都"),
+				new Prefecture(3, "沖縄県"));
 	}
 }

@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class PrefectureApp {
 
-	@GetMapping("hokkaido")
+	@GetMapping("北海道")
 	public ModelAndView get() {
 		return new ModelAndView("prefecture");
 	}

@@ -12,7 +12,7 @@
 		</form>
 	</div>
 	<div class="prefectures" th:each="prefecture : ${prefectures}">
-		<a th:href="@{${prefecture.code}}" th:text="${prefecture.name}">都道府県1</a>
+		<a th:href="@{${prefecture.name}}" th:text="${prefecture.name}">都道府県1</a>
 	</div>
 </body>
 </html>
