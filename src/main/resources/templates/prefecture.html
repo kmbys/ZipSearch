@@ -5,9 +5,8 @@
 	<title>ZipSearch / [[${name}]]</title>
 </head>
 <body>
-	<div class="cities">
-		<a>札幌市</a>
-		<a>小樽市</a>
+	<div class="cities" th:each="city : ${cities}">
+		<a th:text="${city.name}">市区町村名1</a>
 	</div>
 </body>
 </html>
