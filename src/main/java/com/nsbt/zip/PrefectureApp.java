@@ -14,6 +14,8 @@ public class PrefectureApp {
 
 	@GetMapping("{prefecture}")
 	public ModelAndView get(@PathVariable("prefecture") String prefecture) {
-		return new ModelAndView("prefecture", "cities", service.find(0));
+		ModelAndView mov = new ModelAndView("prefecture", "cities", service.find(0));
+		mov.addObject("name", prefecture);
+		return mov;
 	}
 }
