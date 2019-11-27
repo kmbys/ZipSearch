@@ -1,4 +1,4 @@
 create table PREFECTURES (
-	ID integer primary key,
-	NAME char not null
+	ID char(2) primary key,
+	NAME varchar(4) not null
 );

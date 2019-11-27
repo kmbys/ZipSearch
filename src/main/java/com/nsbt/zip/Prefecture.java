@@ -1,15 +1,15 @@
 package com.nsbt.zip;
 
 public class Prefecture {
-	private int id;
+	private String id;
 	private String name;
 
-	public Prefecture(Integer id, String name) {
+	public Prefecture(String id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
